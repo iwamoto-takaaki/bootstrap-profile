@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- ナビゲーションバー -->
     <header class="pt-3 pb-2 bg-dark">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">岩元隆明のプロフィール</a>
@@ -36,6 +37,9 @@
             </div>
         </nav>
     </header>
+    <!-- カルーセル -->
+    <!-- class指定だけて作れます。 -->
+    <!-- リア充を演出。(かなりわざとらしい・・・) -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -55,6 +59,8 @@
             </div>
         </div>
     </div>
+    <!-- プロフィール -->
+    <!-- flexboxでセンタリングします -->
     <div id="profile" class="container pt-5 d-flex flex-column text-center">
         <div class="pt-5 d-flex flex-column text-center">
             <h1>about</h1>
@@ -63,11 +69,18 @@
             </div>
         </div>
         <div>
-            <img src="./image/IMG_1804_400x400.JPG" alt="twitter-image" class="rounded-circle shadow-lg p-1 mb-5 bg-dark rounded">
+            <!-- 写真はとりあえず丸くしとけ！ -->
+            <img src="./image/IMG_1804_400x400.JPG" alt="twitter-image" class="w-50 rounded-circle shadow-lg p-1 mb-5 bg-dark rounded">
         </div>
         <h1>岩元 隆明(いわもと　たかあき)</h1>
         <p>email: iwamoto.takaaki@gmail.com</p>
+        <p>bootstrapのサンプルページなので、岩元に関する情報はいい加減です。丸いアイコンっていいですよ。<br>
+            カルーセルの内容は、特に意味がなさそうなことってありますよね。
+        </p>
     </div>
+    <!-- お仕事 -->
+    <!-- 背景はセクションごとに白とライトグレーを交互に・・・ -->
+    <!-- 写真は内容を補ってくれて便利 -->
     <div id="works" class="bg-light">
         <div class="container">
             <div class="pt-5 d-flex flex-column text-center">
@@ -77,7 +90,9 @@
                 </div>
             </div>
             <div class="d-flex flex-wrap">
-                <div class="card p-0 col-4">
+                <!-- カードはレスポンシブデザインに -->
+                <!-- flexboxよりGridの方が使いやすい場合もある -->
+                <div class="card p-0 col-12 col-sm-4">
                     <img class="card-img-top" src="./image/card-web.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">ホームページ作成</h5>
@@ -87,7 +102,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card p-0 col-4">
+                <div class="card p-0 col-12 col-sm-4">
                     <img class="card-img-top" src="./image/card-db.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">データベース設計</h5>
@@ -98,7 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card p-0 col-4">
+                <div class="card p-0 col-12 col-sm-4">
                     <img class="card-img-top" src="./image/card-code.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">プログラミング支援</h5>
@@ -108,7 +123,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card p-0 col-4">
+                <div class="card p-0 col-12 col-sm-4">
                     <img class="card-img-top" src="./image/card-doc.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">ドキュメント管理</h5>
@@ -121,6 +136,8 @@
             </div>
         </div>
     </div>
+    <!-- 好きなもの -->
+    <!-- 地図やその他埋め込みをしています。 -->
     <div id="likes" class="container">
         <div class="pt-5 d-flex flex-column text-center">
             <h1>likes</h1>
@@ -139,10 +156,9 @@
         </div>
     </div>
     <footer class="mt-3 bg-dark text-right text-white-50" style="height: 3rem">
-        <p class="p-2">©IWAMOTO Takaaki</p>
+        <p>©IWAMOTO Takaaki</p>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
